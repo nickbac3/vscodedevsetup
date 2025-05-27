@@ -1,7 +1,7 @@
 
 # VS Code Dev Setup for AC3 AWS Development
 
-This repository provides a pre-configured development environment for AC3 developers working with AWS. It leverages **VS Code Dev Containers** to ensure a consistent and efficient setup across machines.
+This repository provides a pre-configured development environment for AC3 developers working with AWS. It leverages **VS Code Dev Containers** to ensure a consistent and efficient setup across machines. You can add this .devcontainer folder and it's content into the root of any code in vscode and open devcontainers to work within the terminal
 
 ## Features
 
@@ -9,7 +9,7 @@ This repository provides a pre-configured development environment for AC3 develo
 - 🧰 Pre-installed tools and libraries for AWS or Azure development
 - 🖥️ Custom **Zsh** shell with **Oh My Zsh**, **Powerlevel10k**, and useful aliases
 - ⚙️ Configured `devcontainer.json` for seamless integration with VS Code
-- 🧑‍💻 Ideal for AC3 developers working on cloud-native applications
+- 🧑‍💻 Ideal for AC3 developers working on cloud development
 
 ## What's Included
 
@@ -17,6 +17,7 @@ This repository provides a pre-configured development environment for AC3 develo
 - `devcontainer.json`: VS Code configuration for the development container
 - `.zshrc`: Custom Zsh configuration with plugins and aliases
 - `.p10k.zsh`: Powerlevel10k theme configuration for a beautiful and informative terminal
+- `aws`: Will mount your local .aws directory so you can authenticate from vscode container after you have awsro/rw on your machine locally 
 
 ## Prerequisites
 

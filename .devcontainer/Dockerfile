@@ -39,11 +39,11 @@ RUN echo 'source ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k/pow
 USER root
 
 RUN curl -o ./p10k.zsh https://raw.githubusercontent.com/nickbac3/vscodedevsetup/main/p10k.zsh
-COPY ./p10k.zsh /home/vscode/.p10k.zsh
-COPY ./p10k.zsh ~/.p10k.zsh
+RUN cp ./p10k.zsh /home/vscode/.p10k.zsh
+RUN cp ./p10k.zsh .p10k.zsh
 RUN curl -o ./zshrc https://raw.githubusercontent.com/nickbac3/vscodedevsetup/main/zshrc
-COPY ./zshrc /home/vscode/.zshrc
-COPY ./zshrc ~/.zshrc
+RUN cp ./zshrc /home/vscode/.zshrc
+RUN cp ./zshrc .zshrc
 
 RUN chown -R vscode:vscode /home/vscode/.oh-my-zsh /home/vscode/.zshrc /home/vscode/.p10k.zsh
 

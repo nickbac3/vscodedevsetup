@@ -28,12 +28,11 @@
     "richie5um2.vscode-sort-json",
     "tintinweb.json2yaml"
 ],
-
   "mounts": [
-    "source=${env:HOME}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached"
-],
-
-  "containerEnv": {
+    "source=${env:HOME}/.aws,target=/home/vscode/.aws,type=bind,readonly",
+    "source=${env:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,readonly"
+],  
+"containerEnv": {
     "AWS_SHARED_CREDENTIALS_FILE": "/home/vscode/.aws/credentials",
     "AWS_CONFIG_FILE": "/home/vscode/.aws/config",
     "AZURE_CONFIG_DIR": "/home/vscode/.azure",
