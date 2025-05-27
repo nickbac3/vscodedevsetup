@@ -26,3 +26,7 @@ Before you begin, ensure you have the following installed:
 - [Docker](https://www.docker.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Remote - Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+## Installation
+
+add the .devcontainer folder and it's contents to your local development folder root and open in vscode. Be sure to add `.devcontainer/` to your .gitignore file so you don't mess anyone else's configs up
