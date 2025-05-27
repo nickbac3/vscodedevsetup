@@ -38,9 +38,11 @@ RUN echo 'source ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k/pow
 #RUN echo 'source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 USER root
 
-COPY ./p10k.zsh ~/.p10k.zsh
+RUN curl -o ~/.p10k.zsh https://raw.githubusercontent.com/nickbac3/vscodedevsetup/main/p10k.zsh
+#COPY ./p10k.zsh ~/.p10k.zsh
 COPY ./p10k.zsh /home/vscode/.p10k.zsh
-COPY ./zshrc /home/vscode/.zshrc
+RUN curl -o ~/.zshrc https://raw.githubusercontent.com/nickbac3/vscodedevsetup/main/zshrc
+#COPY ./zshrc /home/vscode/.zshrc
 COPY ./zshrc ~/.zshrc
 
 USER root
